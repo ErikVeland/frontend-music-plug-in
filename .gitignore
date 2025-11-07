@@ -1,1 +1,50 @@
-iProjectM.pkg
+# Build directories
+build/
+*.build/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# Temporary files
+*.tmp
+*.temp
+
+# Log files
+*.log
+
+# Package files
+*.pkg
+
+# CMake files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.cmake
+
+# CPack files
+CPackConfig.cmake
+CPackSourceConfig.cmake
+_CPack_Packages/
+
+# Compiled files
+*.o
+*.so
+*.dylib
+*.dll
+*.exe
+
+# Code signing
+*.p12
+*.mobileprovision
