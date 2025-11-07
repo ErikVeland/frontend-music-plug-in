@@ -1,8 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/Users/veland/Downloads/libprojectM-4.1.5/frontend-music-plug-in-master/build/cmake_install.cmake",
-		"/Users/veland/Downloads/libprojectM-4.1.5/frontend-music-plug-in-master/build/src/cmake_install.cmake"
-	],
-	"Parallel" : false
-}
