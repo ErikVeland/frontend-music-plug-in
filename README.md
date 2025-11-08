@@ -9,6 +9,8 @@ into awesome visuals while you listen.
 This is a visualizer plugin for Apple Music (formerly iTunes) that uses the libprojectM 4.1.5 library to create
 real-time audio visualizations. The plugin works with both Intel and Apple Silicon Macs.
 
+> **Note**: The PKG installer is not code-signed due to installer certificate requirements. The plugin bundle itself is properly signed with a Developer ID certificate, ensuring it will work correctly with Apple Music.
+
 ## Features
 
 - Compatible with Apple Music on macOS 11+
@@ -20,9 +22,13 @@ real-time audio visualizations. The plugin works with both Intel and Apple Silic
 ## Installation
 
 1. Download the latest PKG installer from the Releases page
-2. Run the installer and follow the prompts
-3. Restart Apple Music
-4. Enable the visualizer: Window → Visualizer
+2. If you encounter a security warning about an unsigned installer:
+   - Right-click (or Control-click) on the PKG file
+   - Select "Open" from the context menu
+   - Click "Open" in the dialog that appears to proceed with installation
+3. Follow the installer prompts to complete installation
+4. Restart Apple Music
+5. Enable the visualizer: Window → Visualizer
 
 ## Building from Source
 
