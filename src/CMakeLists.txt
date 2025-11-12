@@ -1,4 +1,3 @@
-
 add_library(ProjectM MODULE
     macos/iTunesAPI.cpp
     macos/iTunesAPI.h
@@ -11,7 +10,11 @@ add_library(ProjectM MODULE
     )
 
 set_target_properties(ProjectM PROPERTIES
+    BUNDLE TRUE
+    BUNDLE_EXTENSION bundle
+    MACOSX_BUNDLE TRUE
     MACOSX_BUNDLE_INFO_PLIST "${CMAKE_CURRENT_SOURCE_DIR}/Resources/ProjectM-plugin-info.plist"
+    OUTPUT_NAME "for iTunes"
     )
 
 target_include_directories(ProjectM

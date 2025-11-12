@@ -1,30 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"\>
 <plist version="1.0">
 <dict>
-	<key>CFBundleDevelopmentRegion</key>
-	<string>English</string>
-	<key>CFBundleExecutable</key>
-	<string>libProjectM.so</string>
-	<key>CFBundleIconFile</key>
-	<string></string>
-	<key>CFBundleIdentifier</key>
-	<string>net.projectm.music-plugin</string>
-	<key>CFBundleInfoDictionaryVersion</key>
-	<string>6.0</string>
-	<key>CFBundleName</key>
-	<string>ProjectM</string>
-	<key>CFBundlePackageType</key>
-	<string>hvpl</string>
-	<key>CFBundleShortVersionString</key>
-	<string>$(MARKETING_VERSION)</string>
-	<key>CFBundleSignature</key>
-	<string>hook</string>
-	<key>CFBundleVersion</key>
-	<string>1</string>
-	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2021 Mischa Spiegelmock. All rights reserved.</string>
-	<key>NSHighResolutionCapable</key>
-    <string>True</string>
+        <key>CFBundleDevelopmentRegion</key>
+        <string>English</string>
+        <key>CFBundleExecutable</key>
+        <string>for iTunes</string>
+        <key>CFBundleGetInfoString</key>
+        <string>ProjectM 4.1.5, © 2025 projectM Team</string>
+        <key>CFBundleIdentifier</key>
+        <string>net.projectm.music-plugin</string>
+        <key>CFBundleInfoDictionaryVersion</key>
+        <string>6.0</string>
+        <key>CFBundleName</key>
+        <string>ProjectM</string>
+        <key>CFBundlePackageType</key>
+        <string>hvpl</string>
+        <key>CFBundleShortVersionString</key>
+        <string>4.1.5</string>
+        <key>CFBundleSignature</key>
+        <string>hook</string>
+        <key>CFBundleSupportedPlatforms</key>
+        <array>
+                <string>MacOSX</string>
+        </array>
+        <key>CFBundleVersion</key>
+        <string>1.0</string>
+        <key>LSMinimumSystemVersion</key>
+        <string>10.13</string>
+        <key>NSHumanReadableCopyright</key>
+        <string>Copyright © 2025 projectM Team. All rights reserved.</string>
+        <key>NSHighResolutionCapable</key>
+        <string>True</string>
+        <key>DTCompiler</key>
+        <string>com.apple.compilers.llvm.clang.1_0</string>
+        <key>DTPlatformName</key>
+        <string>macosx</string>
+        <key>DTPlatformVersion</key>
+        <string>14.5</string>
+        <key>DTSDKName</key>
+        <string>macosx14.5</string>
+        <key>DTXcode</key>
+        <string>1540</string>
 </dict>
 </plist>

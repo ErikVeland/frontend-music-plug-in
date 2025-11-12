@@ -1,26 +1,15 @@
-
 # The actual bundle directory, including the proper iTunes plug-in dir.
-set(PROJECTM_PLUGIN_BUNDLE_DIR "Library/iTunes/iTunes Plug-ins/ProjectM.bundle")
+set(PROJECTM_PLUGIN_BUNDLE_DIR "Library/iTunes/iTunes Plug-ins")
 
-install(TARGETS ProjectM
-    LIBRARY DESTINATION "${PROJECTM_PLUGIN_BUNDLE_DIR}/Contents/MacOS"
-    COMPONENT MusicPlugin
-    )
-
-install(FILES src/Resources/ProjectM-plugin-info.plist
-    DESTINATION "${PROJECTM_PLUGIN_BUNDLE_DIR}/Contents/"
-    RENAME Info.plist
-    COMPONENT MusicPlugin
-    )
-
-install(FILES src/Resources/PkgInfo
-    DESTINATION "${PROJECTM_PLUGIN_BUNDLE_DIR}/Contents/"
+# Install the built bundle directly
+install(DIRECTORY "${CMAKE_BINARY_DIR}/src/for iTunes.bundle/"
+    DESTINATION "${PROJECTM_PLUGIN_BUNDLE_DIR}/ProjectM.bundle"
     COMPONENT MusicPlugin
     )
 
 foreach(preset_dir ${PRESET_DIRS})
     install(DIRECTORY ${preset_dir}
-        DESTINATION "${PROJECTM_PLUGIN_BUNDLE_DIR}/Contents/Resources/presets/"
+        DESTINATION "${PROJECTM_PLUGIN_BUNDLE_DIR}/ProjectM.bundle/Contents/Resources/presets/"
         COMPONENT MusicPlugin
         PATTERN *.md EXCLUDE
         )

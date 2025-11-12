@@ -9,6 +9,8 @@ project(projectM-Apple-Music-PlugIn
     LANGUAGES OBJC C CXX
     )
 
+set(MARKETING_VERSION "${PROJECT_VERSION}")
+
 if(NOT CMAKE_SYSTEM_NAME STREQUAL "Darwin")
     message(FATAL_ERROR "This plug-in only builds on macOS.")
 endif()
